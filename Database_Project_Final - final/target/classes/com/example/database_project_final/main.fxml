@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="854.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database_project_final.MainController">
+  <tabs>
+    <Tab fx:id="tablogin" text="ParyalLogin">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tf_loginId_login" layoutY="28.0" promptText="Login ID" />
+                  <TextField fx:id="tf_userId_login" layoutX="2.0" layoutY="88.0" promptText="User Id" />
+                  <TextField fx:id="tf_username_login" layoutX="2.0" layoutY="146.0" promptText="User Name" />
+                  <TextField fx:id="tf_password_login" layoutX="2.0" layoutY="216.0" promptText="Password" />
+                  <Button fx:id="btn_searchlogin" layoutX="289.0" layoutY="29.0" mnemonicParsing="false" onAction="#searchParyalLogin" text="Search" />
+                  <Button fx:id="btn_insertlogin" layoutX="152.0" layoutY="308.0" mnemonicParsing="false" onAction="#insertInParyalLogin" text="Insert" />
+                  <Button fx:id="btn_updatelogin" layoutX="307.0" layoutY="308.0" mnemonicParsing="false" onAction="#updateInParyalLogin" text="Update" />
+                  <Button fx:id="btn_deletelogin" layoutX="493.0" layoutY="308.0" mnemonicParsing="false" onAction="#deleteInParyalLogin" text="Delete" />
+                  <Button fx:id="btn_showlogin" layoutX="664.0" layoutY="308.0" mnemonicParsing="false" onAction="#showFromParyalLogin" text="Show" />
+                  <ScrollPane layoutX="54.0" layoutY="395.0">
+                     <content>
+                        <ScrollPane>
+                           <content>
+                              <TextArea fx:id="ta_show_login" prefHeight="200.0" prefWidth="706.0" />
+                           </content>
+                        </ScrollPane>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btn_logout" layoutX="721.0" layoutY="626.0" mnemonicParsing="false" text="Logout" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tab_user" text="ParyalUser">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="375.0" prefWidth="611.0">
+               <children>
+                  <TextField fx:id="tf_user_Id_user" layoutX="1.0" layoutY="42.0" prefHeight="26.0" prefWidth="165.0" promptText="User Id" />
+                  <TextField fx:id="tf_first_Name_user" layoutY="101.0" prefHeight="26.0" prefWidth="168.0" promptText="First Name" />
+                  <TextField fx:id="tf_last_Name_user" layoutY="159.0" prefHeight="26.0" prefWidth="167.0" promptText="Last Name" />
+                  <TextField fx:id="tf_email_Address_user" layoutX="2.0" layoutY="213.0" prefHeight="26.0" prefWidth="164.0" promptText="Email Address" />
+                  <TextField fx:id="tf_access_Level_user" layoutX="2.0" layoutY="266.0" prefHeight="26.0" prefWidth="166.0" promptText="Access Level" />
+                  <Button fx:id="btn_search_user" layoutX="327.0" layoutY="27.0" mnemonicParsing="false" onAction="#searchParyalUser" text="Search" />
+                  <Button fx:id="btn_insert_user" layoutX="168.0" layoutY="346.0" mnemonicParsing="false" onAction="#insertInParyalUser" text="Insert" />
+                  <Button fx:id="btn_update_user" layoutX="299.0" layoutY="346.0" mnemonicParsing="false" onAction="#updateInParyalUser" text="Update" />
+                  <Button fx:id="btn_delete_user" layoutX="448.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteInParyalUser" text="Delete" />
+                  <Button fx:id="btn_show_user" layoutX="606.0" layoutY="346.0" mnemonicParsing="false" onAction="#showfromParyalUser" text="Show" />
+                  <TextArea fx:id="ta_show_user" layoutX="54.0" layoutY="405.0" prefHeight="200.0" prefWidth="716.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
